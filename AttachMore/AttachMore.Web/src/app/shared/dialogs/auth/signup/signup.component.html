@@ -1,0 +1,45 @@
+<div class="dialog-container">
+  <div fxLayoutAlign="space-between">
+    <h1 mat-dialog-title>Register</h1>
+    <button mat-icon-button  [mat-dialog-close]="false" class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div mat-dialog-content>
+    <form [formGroup]="signupForm" fxLayout="column" fxLayoutAlign="start">
+      <mat-form-field>
+        <input type="text" matInput placeholder="First Name" required formControlName="firstName" />
+        <mat-error>
+          <am-input-error-msg [control]="firstName"></am-input-error-msg>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Last Name" required formControlName="lastName" />
+        <mat-error>
+          <am-input-error-msg [control]="lastName"></am-input-error-msg>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Email" required formControlName="email" />
+        <mat-error>
+          <am-input-error-msg [control]="email"></am-input-error-msg>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" required formControlName="password" />
+        <mat-error>
+          <am-input-error-msg [control]="password"></am-input-error-msg>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Company" formControlName="company" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Phone Number" formControlName="phoneNumber" amNumberOnly/>
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions fxLayoutAlign="end" fxLayoutGap="10px" class="mt-20">
+    <button class="mat-flat-button border-radius-0" mat-raised-button color="primary" [disabled]="signupForm.invalid" (click)="onSubmit()">Register</button>
+  </div>
+</div>

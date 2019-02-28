@@ -1,0 +1,79 @@
+
+$primary-color:#2E71F0;
+
+$secondary-color:#E58E15;
+.features-block-1 
+{.round-images{
+    background: $primary-color;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}}
+.btn-dark {
+    background-color: $primary-color;
+}
+.pricing-2 .pricing-table.recommended .pricing-footer .btn {
+    background-color: $secondary-color;
+}
+
+.pricing-table
+{
+   h4 {
+        color:$primary-color;
+        font-weight:600;
+    }
+}
+.features-block-5 {
+    padding: 30px 20px;
+    text-align: center;
+    min-height: 233px;
+  }
+
+  .free-trial
+  {  
+    background-repeat: no-repeat;
+    height:345px;
+  }
+
+  .free-trial .mat-form-field-appearance-legacy .mat-form-field-label,
+.free-trial .mat-form-field.mat-focused .mat-form-field-label,
+.free-trial .mat-input-element.mat-form-field-autofill-control
+{
+   color: #fff; 
+}
+.free-trial .mat-form-field-infix {
+  padding: 0.5em 0;
+  border-bottom: 1px solid $primary-color;
+}
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label
+{
+    color:#fff
+}
+
+.li-check
+{
+    color:$primary-color;
+}
+.heightMin
+{
+    min-height: 124px;
+}
+// .fs-hero {
+//     height: 90vh;
+// }
+.fs-hero {
+    height: 100%;
+}
+.readmore
+{
+    padding:2px 17px;
+    line-height:35px;
+}
+@media (max-width: 767px){
+	.r-main.banner-content{
+		margin-top: 100px !important;
+    }
+}

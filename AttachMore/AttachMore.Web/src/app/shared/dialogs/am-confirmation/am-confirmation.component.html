@@ -1,0 +1,8 @@
+  <h1 mat-dialog-title>{{ data.title? data.title : 'Delete Confirmation'}}</h1>
+  <mat-dialog-content>
+    <p> {{data.message ? data.message: 'Are you sure you want to delete?'}}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions fxLayoutAlign="end" fxLayoutGap="10px">
+    <button mat-stroked-button [mat-dialog-close]="false">No</button>
+    <button mat-stroked-button color="primary" cdkFocusInitial [mat-dialog-close]="true">Yes</button>
+  </mat-dialog-actions>

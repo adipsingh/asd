@@ -1,0 +1,26 @@
+<label class="font-size-14 mrg-top-10" fxLayoutAlign="center">Here is the download link:</label>
+<div>
+  <div class="width-70 mrg-horizon-auto mrg-btm-10">
+    <input type="text" #linkInput class="form-control text-center" [value]="name" readonly="true">
+  </div>
+  <div class="copy-link">
+    <button mat-flat-button color="accent" (click)="copyLink()" (mouseout)="whenFocusOut()"
+      class="white-500-fg border-radius-0 text-center">
+      <span #copyLinkBtnToolTip class="copy-link-text" id="myTooltip">Copy to clipboard</span>
+      Copy Link</button>
+    <button mat-flat-button color="accent" class="white-500-fg border-radius-0 mrg-left-10">
+      Share Link</button>
+    <am-fb-like [url]="name"></am-fb-like>
+    <am-google-plus [url]="name"></am-google-plus>
+    <am-tweet [url]="name"></am-tweet>
+    <am-linked-in [url]="name"></am-linked-in>
+   
+    
+
+  </div>
+  <!-- 
+  <i class="ei ei-email e-mail social-icons" aria-hidden="true"></i>
+  <i class="ei ei-facebook facebook social-icons" aria-hidden="true"></i>
+  <i class="ei ei-twitter twitter social-icons" aria-hidden="true"></i>
+  <i class="ei ei-google-plus google-plus social-icons" aria-hidden="true"></i> -->
+</div>

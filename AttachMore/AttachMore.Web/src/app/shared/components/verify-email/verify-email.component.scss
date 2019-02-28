@@ -1,0 +1,32 @@
+.min-height-35{
+    min-height: 35px;
+}
+.clearfix
+{
+    clear:both;
+}
+.line-height-36
+{
+    line-height:36px;
+}
+.vrfy-mail .mat-form-field-appearance-legacy .mat-form-field-label,
+.vrfy-mail .mat-form-field.mat-focused .mat-form-field-label,
+.vrfy-mail .mat-input-element.mat-form-field-autofill-control
+{color:#fff;}
+.mat-form-field-appearance-legacy .mat-form-field-can-float,
+.mat-form-field-should-float .mat-form-field-label
+{
+    color:#fff
+}
+.mat-form-field-appearance-legacy .mat-form-field-label
+{
+    color: #fff;
+}
+.alert.r-error {
+    background: transparent;
+    border: none;
+    padding: 3px 0 0;
+    color: #ee1e1a;
+    font-size: 16px;
+        margin-bottom: 0;
+}

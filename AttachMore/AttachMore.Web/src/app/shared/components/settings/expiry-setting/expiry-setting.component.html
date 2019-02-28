@@ -1,0 +1,68 @@
+<!-- <form class="pt-16 expiry-tab" [formGroup]="expirySettingForm" (ngSubmit)="onSubmit()">
+  <div fxLayoutAlign="space-between start">
+    <mat-form-field>
+      <mat-select placeholder="Number of Downloads" formControlName="downloadsLimit">
+        <mat-option value="5">5</mat-option>
+        <mat-option value="4">4</mat-option>
+        <mat-option value="3">3</mat-option>
+        <mat-option value="2">2</mat-option>
+        <mat-option value="1">1</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <input matInput [matDatepicker]="picker1" [min]="minDate" placeholder="Expire After" formControlName="expiryDate">
+      <mat-datepicker-toggle matSuffix [for]="picker1" class="font-size-14"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" [min]="minDate" placeholder="Delete After" formControlName="deletionDate">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div fxLayoutAlign="start">
+    <button mat-flat-button color="accent" class="white-500-fg border-radius-0">Save</button>
+  </div>
+</form> -->
+
+<form class="mrg-top-20">
+  <div class="text-center form-group" >
+    <label>Number of downloads</label>
+    <select class="form-control width-30 display-inline mrg-left-10">
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+  </div>
+ 
+  <div class="text-center form-group mrg-top-20" >
+      <label>Expires after</label>
+      <input type="text" placeholder="12-03-2019" class="form-control width-30 display-inline mrg-left-10">
+    </div>
+    <div class="text-center form-group" >
+        <label>Number of downloads</label>
+        <select class="form-control width-30 display-inline mrg-left-10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+      </div>
+      <div fxLayoutAlign="center mrg-top-10">
+          <button mat-flat-button color="accent" class="white-500-fg border-radius-0">Save</button>
+        </div>
+</form>
